@@ -10,7 +10,7 @@
   <img alt="cost: 1 credit per render" src="https://img.shields.io/badge/cost-1_credit_%2F_render-164e63?style=flat-square&labelColor=0f172a">
 </p>
 
-# 3d-filmmaking-ads-multimodal-evals
+# ai-filmmaking-evals
 
 **An advertising-grade AI filmmaking pipeline where the evals are the product.**
 It writes a script, speaks it in a cloned voice, renders a consistent generated
