@@ -155,10 +155,6 @@ Interactive version: [`docs/architecture.html`](docs/architecture.html) — ever
 clickable to the failure that forced it. Open it locally (`open docs/architecture.html`);
 GitHub renders `.html` as source.
 
-<p align="center">
-  <img src="assets/band-stages.svg" alt="the build: ten stages, each a decision" width="100%">
-</p>
-
 ## The suite, stage by stage
 
 Ten stages. Every image is from the run at the top of this page, except the stage 0/1
@@ -255,10 +251,6 @@ needs the same presenter identical on Tuesday and Thursday.
 
 ---
 
-<p align="center">
-  <img src="assets/band-fork.svg" alt="the fork: one render, two destinations" width="100%">
-</p>
-
 ## The fork
 
 Everything up to here is shared. At this point the same presenter becomes two products,
@@ -341,10 +333,6 @@ shaped the way they are.
 
 ---
 
-<p align="center">
-  <img src="assets/band-findings.svg" alt="what measuring it turned up" width="100%">
-</p>
-
 ## What measuring it turned up
 
 | lesson | what happened |
@@ -359,10 +347,6 @@ shaped the way they are.
 Most of these are me finding my own work wasn't what I'd written down. That's the point.
 
 ---
-
-<p align="center">
-  <img src="assets/band-numbers.svg" alt="counts, never rates" width="100%">
-</p>
 
 ## The numbers
 
@@ -393,10 +377,6 @@ or time saved (no manual baseline was ever measured). Both in
 
 ---
 
-<p align="center">
-  <img src="assets/band-cost.svg" alt="measured per engine, never extrapolated" width="100%">
-</p>
-
 ## Cost
 
 The scheduled pipeline renders on the **flat tier**: 1 credit at every length. The
@@ -416,10 +396,6 @@ Voice is metered per character and synthesis costs zero render credits — which
 the pipeline draws three voice takes and renders once.
 
 ---
-
-<p align="center">
-  <img src="assets/band-run.svg" alt="what it takes to reproduce this" width="100%">
-</p>
 
 ## Running it
 
