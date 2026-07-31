@@ -139,17 +139,52 @@ measure between the prompt and the pixels.
 
 ## Architecture
 
-<p align="center">
-  <img src="assets/architecture-bw.svg" alt="metered vendors, ten stages, the real-time fork, local models, four gates" width="100%">
-</p>
+```mermaid
+flowchart TD
+    subgraph METERED [" METERED · billed per call "]
+        TTS["text-to-speech<br/><small>0 render credits</small>"]
+        AV["avatar render<br/><small>1, 43 or 58 credits</small>"]
+    end
+
+    W["0 · WAKE<br/><small>a timer, not a person</small>"]
+    S["1 · SCRIPT<br/><small>two agents, kept apart</small>"]
+    V["2 · VOICE<br/><small>clone, draw 3, keep median</small>"]
+    L["3 · LOOK<br/><small>one pinned identity</small>"]
+    R["4 · RENDER<br/><small>the still IS the seed</small>"]
+    M["5 · MATTE<br/><small>the room comes out</small>"]
+    D["6 · DEPTH<br/><small>colour becomes distance</small>"]
+    P["7 · PARALLAX<br/><small>distance spent sideways</small>"]
+    Q["8 · QUILT<br/><small>7 × 11 = 77 views</small>"]
+    C["9 · CAST<br/><small>one view per eye</small>"]
+
+    W --> S --> V --> L --> R
+    R --> M --> D --> P --> Q --> C
+    R -. "fork" .-> RT["REAL-TIME ARM<br/><small>none of these gates apply</small>"]
+
+    TTS -. meters .-> V
+    AV -. meters .-> R
+
+    G1{{"gate · transcript diff"}} -.-> V
+    G2{{"gate · identity pin"}} -.-> L
+    G3{{"gate · separation"}} -.-> M
+    G4{{"gate · ship geometry"}} -.-> C
+
+    classDef metered fill:#161b22,stroke:#8b949e,color:#e6edf3;
+    classDef stage fill:#161b22,stroke:#30363d,color:#e6edf3;
+    classDef gate fill:#0d1117,stroke:#f0f6fc,color:#f0f6fc;
+    classDef fork fill:#0d1117,stroke:#6e7681,color:#8b949e,stroke-dasharray:4 3;
+    class TTS,AV metered;
+    class W,S,V,L,R,M,D,P,Q,C stage;
+    class G1,G2,G3,G4 gate;
+    class RT fork;
+```
 
 Four rows. **Metered** is anything a run can spend money on — exactly two vendors.
 **Local** is everything that runs free on this machine, which is why a daily render
 costs one credit and not a model bill. **Gates** sit under the stage they act on, and
 only four of thirteen probes are there: the rest report a number and let the run
 continue, because a metric that hasn't proven itself stable inside one clip hasn't
-earned authority to stop one. Every figure in the diagram is published elsewhere in
-this repo, and the generator refuses to write the file if those figures leave the README.
+earned authority to stop one.
 
 Interactive version: [`docs/architecture.html`](docs/architecture.html) — every box
 clickable to the failure that forced it. Open it locally (`open docs/architecture.html`);
