@@ -5,10 +5,10 @@
       <stop offset="1" stop-color="#010409"/>
     </linearGradient>
     <marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="#58a6ff"/>
+      <path d="M0,0 L10,5 L0,10 z" fill="#f0f6fc"/>
     </marker>
     <marker id="ag" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="#d29922"/>
+      <path d="M0,0 L10,5 L0,10 z" fill="#f0f6fc"/>
     </marker>
     <style>
       text { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
@@ -21,8 +21,8 @@
       .card-sub { font-size: 10.5px; fill: #8b949e; }
       .title { font-size: 22px; font-weight: 800; fill: #e6edf3; }
       .subtitle { font-size: 12.5px; fill: #8b949e; }
-      .pill { font-size: 11px; fill: #79c0ff; }
-      .gate { font-size: 11px; font-weight: 600; fill: #d29922; }
+      .pill { font-size: 11px; fill: #e6edf3; }
+      .gate { font-size: 11px; font-weight: 600; fill: #f0f6fc; }
       .gate-note { font-size: 10px; fill: #8b949e; }
     </style>
   </defs>
@@ -42,18 +42,18 @@
     <text x="0" y="0" class="row-label">METERED</text>
     <text x="0" y="16" class="row-sub">billed per call, never extrapolated</text>
     <g transform="translate(180,-18)">
-      <rect x="0" y="0" width="230" height="54" rx="8" fill="#161b22" stroke="#d29922" stroke-opacity=".55"/>
+      <rect x="0" y="0" width="230" height="54" rx="8" fill="#161b22" stroke="#f0f6fc" stroke-opacity=".55"/>
       <text x="16" y="24" class="card-title">text-to-speech</text>
       <text x="16" y="42" class="card-sub">pinned model · 0 render credits</text>
     </g>
     <g transform="translate(470,-18)">
-      <rect x="0" y="0" width="230" height="54" rx="8" fill="#161b22" stroke="#d29922" stroke-opacity=".55"/>
+      <rect x="0" y="0" width="230" height="54" rx="8" fill="#161b22" stroke="#f0f6fc" stroke-opacity=".55"/>
       <text x="16" y="24" class="card-title">avatar render</text>
       <text x="16" y="42" class="card-sub">1, 43 or 58 credits</text>
     </g>
     <g transform="translate(760,-18)">
       <rect x="0" y="0" width="260" height="54" rx="8" fill="#0d1117" stroke="#21262d"/>
-      <text x="16" y="24" class="card-title" fill="#3fb950">1 credit</text>
+      <text x="16" y="24" class="card-title" fill="#8b949e">1 credit</text>
       <text x="82" y="24" class="card-sub">per scheduled render</text>
       <text x="16" y="42" class="card-sub">flat tier · same for 9s or 2min</text>
     </g>
@@ -70,87 +70,87 @@
     <g>
       <g transform="translate(0,0)">
         <rect width="208" height="78" rx="8" fill="#161b22" stroke="#21262d"/>
-        <circle cx="24" cy="24" r="12" fill="#58a6ff"/><text x="24" y="28" text-anchor="middle" class="stage-num">0</text>
+        <circle cx="24" cy="24" r="12" fill="#f0f6fc"/><text x="24" y="28" text-anchor="middle" class="stage-num">0</text>
         <text x="46" y="22" class="stage-title">WAKE</text>
         <text x="16" y="46" class="stage-sub">a timer, not a person</text>
         <text x="16" y="62" class="stage-sub">alerts on not-success</text>
       </g>
       <g transform="translate(228,0)">
         <rect width="208" height="78" rx="8" fill="#161b22" stroke="#21262d"/>
-        <circle cx="24" cy="24" r="12" fill="#58a6ff"/><text x="24" y="28" text-anchor="middle" class="stage-num">1</text>
+        <circle cx="24" cy="24" r="12" fill="#f0f6fc"/><text x="24" y="28" text-anchor="middle" class="stage-num">1</text>
         <text x="46" y="22" class="stage-title">SCRIPT</text>
         <text x="16" y="46" class="stage-sub">two agents, kept apart</text>
         <text x="16" y="62" class="stage-sub">one writes, one shapes</text>
       </g>
       <g transform="translate(456,0)">
         <rect width="208" height="78" rx="8" fill="#161b22" stroke="#21262d"/>
-        <circle cx="24" cy="24" r="12" fill="#58a6ff"/><text x="24" y="28" text-anchor="middle" class="stage-num">2</text>
+        <circle cx="24" cy="24" r="12" fill="#f0f6fc"/><text x="24" y="28" text-anchor="middle" class="stage-num">2</text>
         <text x="46" y="22" class="stage-title">VOICE</text>
         <text x="16" y="46" class="stage-sub">clone, continuous take</text>
         <text x="16" y="62" class="stage-sub">draw 3, keep the median</text>
       </g>
       <g transform="translate(684,0)">
         <rect width="208" height="78" rx="8" fill="#161b22" stroke="#21262d"/>
-        <circle cx="24" cy="24" r="12" fill="#58a6ff"/><text x="24" y="28" text-anchor="middle" class="stage-num">3</text>
+        <circle cx="24" cy="24" r="12" fill="#f0f6fc"/><text x="24" y="28" text-anchor="middle" class="stage-num">3</text>
         <text x="46" y="22" class="stage-title">LOOK</text>
         <text x="16" y="46" class="stage-sub">one pinned identity</text>
         <text x="16" y="62" class="stage-sub">fresh look per render</text>
       </g>
       <g transform="translate(912,0)">
         <rect width="208" height="78" rx="8" fill="#161b22" stroke="#21262d"/>
-        <circle cx="24" cy="24" r="12" fill="#58a6ff"/><text x="24" y="28" text-anchor="middle" class="stage-num">4</text>
+        <circle cx="24" cy="24" r="12" fill="#f0f6fc"/><text x="24" y="28" text-anchor="middle" class="stage-num">4</text>
         <text x="46" y="22" class="stage-title">RENDER</text>
         <text x="16" y="46" class="stage-sub">audio drives a still</text>
         <text x="16" y="62" class="stage-sub">the still IS the seed</text>
       </g>
     </g>
-    <g stroke="#58a6ff" stroke-width="1.6" marker-end="url(#ah)">
+    <g stroke="#f0f6fc" stroke-width="1.6" marker-end="url(#ah)">
       <line x1="208" y1="39" x2="226" y2="39"/>
       <line x1="436" y1="39" x2="454" y2="39"/>
       <line x1="664" y1="39" x2="682" y2="39"/>
       <line x1="892" y1="39" x2="910" y2="39"/>
     </g>
-    <path d="M1016,78 L1016,116 L104,116 L104,150" fill="none" stroke="#58a6ff" stroke-width="1.6" marker-end="url(#ah)"/>
+    <path d="M1016,78 L1016,116 L104,116 L104,150" fill="none" stroke="#f0f6fc" stroke-width="1.6" marker-end="url(#ah)"/>
 
     <!-- Row B: 5-9 -->
     <g transform="translate(0,150)">
       <g transform="translate(0,0)">
         <rect width="208" height="78" rx="8" fill="#161b22" stroke="#21262d"/>
-        <circle cx="24" cy="24" r="12" fill="#58a6ff"/><text x="24" y="28" text-anchor="middle" class="stage-num">5</text>
+        <circle cx="24" cy="24" r="12" fill="#f0f6fc"/><text x="24" y="28" text-anchor="middle" class="stage-num">5</text>
         <text x="46" y="22" class="stage-title">MATTE</text>
         <text x="16" y="46" class="stage-sub">the room comes out</text>
         <text x="16" y="62" class="stage-sub">pure black fill</text>
       </g>
       <g transform="translate(228,0)">
         <rect width="208" height="78" rx="8" fill="#161b22" stroke="#21262d"/>
-        <circle cx="24" cy="24" r="12" fill="#58a6ff"/><text x="24" y="28" text-anchor="middle" class="stage-num">6</text>
+        <circle cx="24" cy="24" r="12" fill="#f0f6fc"/><text x="24" y="28" text-anchor="middle" class="stage-num">6</text>
         <text x="46" y="22" class="stage-title">DEPTH</text>
         <text x="16" y="46" class="stage-sub">colour becomes distance</text>
         <text x="16" y="62" class="stage-sub">local GPU, per frame</text>
       </g>
       <g transform="translate(456,0)">
         <rect width="208" height="78" rx="8" fill="#161b22" stroke="#21262d"/>
-        <circle cx="24" cy="24" r="12" fill="#58a6ff"/><text x="24" y="28" text-anchor="middle" class="stage-num">7</text>
+        <circle cx="24" cy="24" r="12" fill="#f0f6fc"/><text x="24" y="28" text-anchor="middle" class="stage-num">7</text>
         <text x="46" y="22" class="stage-title">PARALLAX</text>
         <text x="16" y="46" class="stage-sub">distance spent sideways</text>
         <text x="16" y="62" class="stage-sub">near moves further</text>
       </g>
       <g transform="translate(684,0)">
         <rect width="208" height="78" rx="8" fill="#161b22" stroke="#21262d"/>
-        <circle cx="24" cy="24" r="12" fill="#58a6ff"/><text x="24" y="28" text-anchor="middle" class="stage-num">8</text>
+        <circle cx="24" cy="24" r="12" fill="#f0f6fc"/><text x="24" y="28" text-anchor="middle" class="stage-num">8</text>
         <text x="46" y="22" class="stage-title">QUILT</text>
         <text x="16" y="46" class="stage-sub">7 × 11 = 77 views</text>
         <text x="16" y="62" class="stage-sub">one instant, 77 angles</text>
       </g>
       <g transform="translate(912,0)">
-        <rect width="208" height="78" rx="8" fill="#161b22" stroke="#3fb950" stroke-opacity=".5"/>
-        <circle cx="24" cy="24" r="12" fill="#3fb950"/><text x="24" y="28" text-anchor="middle" class="stage-num">9</text>
+        <rect width="208" height="78" rx="8" fill="#161b22" stroke="#8b949e" stroke-opacity=".5"/>
+        <circle cx="24" cy="24" r="12" fill="#8b949e"/><text x="24" y="28" text-anchor="middle" class="stage-num">9</text>
         <text x="46" y="22" class="stage-title">CAST</text>
         <text x="16" y="46" class="stage-sub">one view per eye</text>
         <text x="16" y="62" class="stage-sub">degrades and pings</text>
       </g>
     </g>
-    <g transform="translate(0,150)" stroke="#58a6ff" stroke-width="1.6" marker-end="url(#ah)">
+    <g transform="translate(0,150)" stroke="#f0f6fc" stroke-width="1.6" marker-end="url(#ah)">
       <line x1="208" y1="39" x2="226" y2="39"/>
       <line x1="436" y1="39" x2="454" y2="39"/>
       <line x1="664" y1="39" x2="682" y2="39"/>
@@ -188,28 +188,28 @@
 
   <!-- ============ GATES ROW ============ -->
   <g transform="translate(40,650)">
-    <text x="0" y="0" class="row-label" fill="#d29922">GATES</text>
+    <text x="0" y="0" class="row-label" fill="#f0f6fc">GATES</text>
     <text x="0" y="16" class="row-sub">block before spend, or before ship</text>
     <g transform="translate(180,-18)">
-      <rect x="0" y="0" width="200" height="66" rx="8" fill="#161b22" stroke="#d29922" stroke-opacity=".55"/>
+      <rect x="0" y="0" width="200" height="66" rx="8" fill="#161b22" stroke="#f0f6fc" stroke-opacity=".55"/>
       <text x="14" y="22" class="gate">voice · transcript diff</text>
       <text x="14" y="40" class="gate-note">stage 2 · 3-draw median</text>
       <text x="14" y="56" class="gate-note">before any render credit</text>
     </g>
     <g transform="translate(400,-18)">
-      <rect x="0" y="0" width="200" height="66" rx="8" fill="#161b22" stroke="#d29922" stroke-opacity=".55"/>
+      <rect x="0" y="0" width="200" height="66" rx="8" fill="#161b22" stroke="#f0f6fc" stroke-opacity=".55"/>
       <text x="14" y="22" class="gate">identity pin</text>
       <text x="14" y="40" class="gate-note">stage 3 · one allowlist</text>
       <text x="14" y="56" class="gate-note">refuses an unpinned face</text>
     </g>
     <g transform="translate(620,-18)">
-      <rect x="0" y="0" width="200" height="66" rx="8" fill="#161b22" stroke="#d29922" stroke-opacity=".55"/>
+      <rect x="0" y="0" width="200" height="66" rx="8" fill="#161b22" stroke="#f0f6fc" stroke-opacity=".55"/>
       <text x="14" y="22" class="gate">separation</text>
       <text x="14" y="40" class="gate-note">stage 5 · torso vs fill</text>
       <text x="14" y="56" class="gate-note">no floating heads</text>
     </g>
     <g transform="translate(840,-18)">
-      <rect x="0" y="0" width="200" height="66" rx="8" fill="#161b22" stroke="#d29922" stroke-opacity=".55"/>
+      <rect x="0" y="0" width="200" height="66" rx="8" fill="#161b22" stroke="#f0f6fc" stroke-opacity=".55"/>
       <text x="14" y="22" class="gate">ship gate</text>
       <text x="14" y="40" class="gate-note">stage 9 · geometry</text>
       <text x="14" y="56" class="gate-note">fails closed on bad input</text>
@@ -217,7 +217,7 @@
   </g>
 
   <!-- gate connectors -->
-  <g stroke="#d29922" stroke-width="1.3" stroke-opacity=".5" stroke-dasharray="3 3" marker-end="url(#ag)" fill="none">
+  <g stroke="#f0f6fc" stroke-width="1.3" stroke-opacity=".5" stroke-dasharray="3 3" marker-end="url(#ag)" fill="none">
     <path d="M280,632 L280,478"/>
     <path d="M500,632 L500,478"/>
     <path d="M720,632 L720,478"/>

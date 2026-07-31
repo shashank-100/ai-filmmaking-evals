@@ -140,7 +140,7 @@ measure between the prompt and the pixels.
 ## Architecture
 
 <p align="center">
-  <img src="assets/architecture.svg" alt="metered vendors, ten stages, the real-time fork, local models, four gates" width="100%">
+  <img src="assets/architecture-bw.svg" alt="metered vendors, ten stages, the real-time fork, local models, four gates" width="100%">
 </p>
 
 Four rows. **Metered** is anything a run can spend money on — exactly two vendors.
