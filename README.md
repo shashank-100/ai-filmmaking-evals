@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.svg" alt="evals govern a cloned voice, a generated character, and a light-field render" width="100%">
+  <img src="assets/hero-terminal.svg" alt="evals govern a cloned voice, a generated character, and a light-field render" width="100%">
 </p>
 
 <p align="center">
