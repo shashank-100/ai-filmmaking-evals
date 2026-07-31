@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/hero.svg" alt="evals govern a cloned voice, a generated character, and a light-field render" width="100%">
+</p>
+
 # 3d-filmmaking-ads-multimodal-evals
 
 An unattended AI filmmaking pipeline where the **evals are the product**.
@@ -13,9 +17,34 @@ thresholds, and wired into gates that can refuse to spend.
 label  ->  derive  ->  gate  ->  render  ->  relabel
 ```
 
+<table>
+  <tr>
+    <td width="34%" align="center">
+      <img src="assets/parallax-wiggle.gif" alt="the presenter under a swaying virtual camera" width="100%"><br>
+      <sub><b>Depth, on a flat screen.</b> A virtual camera sways across the inferred depth map.</sub>
+    </td>
+    <td width="33%" align="center">
+      <img src="assets/quilt-video.gif" alt="the clip as a moving 7x11 array of 77 views" width="100%"><br>
+      <sub><b>77 views per frame.</b> <a href="assets/quilt-video.mp4">▶ full quilt video</a></sub>
+    </td>
+    <td width="33%" align="center">
+      <img src="assets/glass-feed-demo.gif" alt="the presenter explaining her own pipeline" width="100%"><br>
+      <sub><b>She explains her own pipeline.</b> <a href="assets/glass-feed-demo.mp4">▶ watch with sound (2:49)</a></sub>
+    </td>
+  </tr>
+</table>
+
+> The presenter is generated — not a real person or a likeness of one. Her voice is
+> a clone of a consented source. Every asset here comes from **one** run.
+
 ## What it does
 
-Ten stages, from a scheduled wake to a light-field panel:
+Ten stages, from a scheduled wake to a light-field panel. Every image below is the
+same frame carried through the chain:
+
+<p align="center">
+  <img src="assets/journey.png" alt="one frame carried through the seed still, render, matte, depth, parallax, and quilt" width="100%">
+</p>
 
 | # | stage | what happens |
 |---|-------|--------------|
@@ -30,6 +59,17 @@ Ten stages, from a scheduled wake to a light-field panel:
 | 8 | Quilt | warp one frame into a 7×11 array of 77 views |
 | 9 | Glass | feed the quilt to a light-field panel |
 
+## Listen
+
+The 169-second cloned-voice narration — the kept median take, the exact audio the
+clip carries:
+
+<p align="center">
+  <img src="assets/voice-wave.png" alt="the cloned voice waveform" width="100%">
+</p>
+
+▶ **[assets/voice-narration.m4a](assets/voice-narration.m4a)** — 169s of the cloned voice.
+
 ## The core idea
 
 A wrong number in a chart fails loudly. A generated person fails **plausibly** —
@@ -41,11 +81,6 @@ captured as data and compiled into gates:
 - **Derive** — every threshold comes from a labelled pass and fail exemplar, never typed.
 - **Gate** — thresholds become guards that run before money is spent; judging is blind.
 - **Relabel** — when eye and instrument disagree, the disagreement is the data.
-
-## Listen
-
-The 169-second cloned-voice narration — the kept median take, the exact audio the
-clip carries — is in the repo: [`assets/voice-narration.m4a`](assets/voice-narration.m4a).
 
 ## Repository layout
 
@@ -93,6 +128,3 @@ One operator, one machine, one panel, one labeller. The labels are internally
 consistent and externally unvalidated; a second labeller is the single most
 valuable thing this repo is missing. Every figure is a count, never a rate —
 a rate without a denominator is decoration.
-
-The presenter is generated. She is not a real person or a likeness of one. Her
-voice is a clone of a consented source.
